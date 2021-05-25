@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" rel="stylesheet" href="Style/Style.css" />
+    <meta charset="UTF-8">
+    <title>IE Midterm</title>
+</head>
+
+<body>
+
+    <div class="register">
+        <div class="right">
+            <h3>Mr. or Ms.?</h3>
+            <form id="register-form">
+                <label>Name: </label>
+                <input type="text" name="name"/>
+                <br><br>
+                <input type="radio" name="gender" value="male"> Male</input>
+                <br><br>
+                <input type="radio" name="gender" value="female"> Female</input>
+                <br><br>
+                <input class="submit" type="submit" value="Submit"/>
+            </form>
+        </div>
+        <div class="left">
+            <h3>Prediction</h3>
+            <p class="prediction">Gender</p>
+            <p class="Probability">Probability</p>
+
+            <div class="save">
+                <h3>Saved Answer</h3>
+                <p class="saved">  &nbsp</p>
+                <input class="clear" type="button" value="Clear"/>
+            </div>
+        </div>
+    </div>
+
+<!--    <div id="toast" class="toast">Invalid input !</div>-->
+
+    <div id="toast">
+        <div id="error">
+            Error
+        </div>
+        <div id="desc">
+            Invalid input!
+        </div>
+    </div>
+
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

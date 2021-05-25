@@ -1,0 +1,154 @@
+html {
+    /*background-color: darkred;*/
+    background-image: url("../Image/cool-background.png");
+    background-size:     cover;
+    height: 100%;
+    width: 100%;
+    background-repeat:   no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+
+::selection {
+    color: lightblue;
+    background: darkred;
+}
+
+.register{
+    min-width: 30vw;
+    min-height: 30vh;
+    background-color: rgba(195, 195, 195, 0.7);
+    border-radius: 10px;
+    font-size: 18px;
+
+    /*center horizontally and vertically*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* for separate two column*/
+    display: grid;
+    grid-template-columns: auto auto;
+
+    padding: 2%;
+
+    /*margin: 5px;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+
+.clear{
+    background-color: darkred;
+    color: lightblue;
+    border-radius: 2px;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+}
+.submit{
+    background-color: darkred;
+    color: lightblue;
+    border-radius: 2px;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+}
+
+/*border for saved answer*/
+.save{
+        border: dashed darkred;
+    padding: 5%;
+}
+
+
+#toast {
+    visibility: hidden;
+    max-width: 400px;
+    height: 50px;
+    /*margin-left: -125px;*/
+    margin: auto;
+    background-color: #333;
+    color: lightblue;
+    text-align: center;
+    border-radius: 2px;
+
+    display: flex;
+    justify-content: center;
+
+    position: fixed;
+    z-index: 1;
+    left: 0;right:0;
+    bottom: 30px;
+    font-size: 17px;
+    white-space: nowrap;
+}
+#toast #error{
+    width: 50px;
+    height: 50px;
+
+    /*float: left;*/
+    /*display: inline;*/
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    box-sizing: border-box;
+
+    background-color: darkred;
+    color: lightblue;
+}
+#toast #desc{
+
+    color: lightblue;
+    background-color: #333333;
+
+    box-sizing: border-box;
+    width: 350px;
+    height: 50px;
+    max-height: 50px;
+    padding: 16px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    /*visibility: hidden;*/
+    /*overflow: hidden;*/
+    /*white-space: nowrap;*/
+
+    /*animation-delay: 1s;*/
+}
+
+#toast.show {
+    visibility: visible;
+    animation: fadein 1s, stay 2s 1s,  fadeout 1s 3s;
+}
+
+
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+/*@keyframes expand {*/
+/*    from {min-width: 50px}*/
+/*    to {min-width: 350px}*/
+/*}*/
+
+/*@keyframes stay {*/
+/*    from {min-width: 350px}*/
+/*    to {min-width: 350px}*/
+/*}*/
+
+/*@keyframes shrink {*/
+/*    from {min-width: 350px;}*/
+/*    to {min-width: 50px;}*/
+/*}*/
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0px; opacity: 0;}
+}
