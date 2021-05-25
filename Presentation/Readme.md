@@ -11,4 +11,5 @@ npx create-react-app redux-essentials-example --template redux
 some of contents of this presentation are from links below:
 
 https://redux.js.org/tutorials/essentials/part-1-overview-concepts
+
 https://redux.js.org/tutorials/essentials/part-2-app-structure
